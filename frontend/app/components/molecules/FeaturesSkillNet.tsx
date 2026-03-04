@@ -28,7 +28,7 @@ const FeaturesSkillNet: React.FC = () => {
           </div>
           <div className="feature-card">
             <img
-              src="/logo1_caracteristica.jpeg"
+              src="/logo2_caracteristica.jpeg"
               alt="Icono perfil profesional"
               className="feature-icon"
             />
@@ -40,7 +40,7 @@ const FeaturesSkillNet: React.FC = () => {
           </div>
           <div className="feature-card">
             <img
-              src="/logo1_caracteristica.jpeg"
+              src="/logo3_caracteristica.jpeg"
               alt="Icono plataforma intuitiva"
               className="feature-icon"
             />
