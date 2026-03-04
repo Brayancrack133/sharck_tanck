@@ -1,5 +1,5 @@
 .header {
-  background-color: #143D8D;
+  background-color: #7c590790;
   width: 100%;
   position: fixed;
   /* ✅ Esto mantiene el header fijo */
@@ -26,12 +26,12 @@ main,
 
 .logo {
   background-color: #FFFFFF;
-  padding: 5px;
+  padding: 0px;
 }
 
 .logo img {
   display: block;
-  height: 50px;
+  height: 60px;
   cursor: pointer;
 }
 
@@ -132,8 +132,8 @@ main,
 
 .btn-register {
   background-color: white;
-  color: #143D8D;
-  border: 2px solid #143D8D;
+  color: #ec8211;
+  border: 2px solid #d46809;
 }
 
 .btn-register:hover {
@@ -141,13 +141,13 @@ main,
 }
 
 .btn-login {
-  background-color: #143D8D;
+  background-color: #ec8211;
   color: white;
-  border: 2px solid #143D8D;
+  border: 2px solid #ec8211;
 }
 
 .btn-login:hover {
-  background-color: #0e2e6a;
+  background-color: #7d3d0d;
 }
 
 

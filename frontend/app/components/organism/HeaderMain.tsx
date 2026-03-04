@@ -27,7 +27,7 @@ const HeaderMain: React.FC = () => {
         <div className="logo">
           <a href="/Institucional">
             <img
-              src="/logo2.svg"
+              src="/logo_2_barber.jpeg"
               alt="Logo SkillNet"
             />
           </a>

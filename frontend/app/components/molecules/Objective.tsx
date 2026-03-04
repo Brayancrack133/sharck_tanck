@@ -1,10 +1,10 @@
 // src/components/molecules/Objective.tsx
-import React from 'react';
-import './Objective.css';
+import React from "react";
+import "./Objective.css";
 
 const Objective: React.FC = () => {
   return (
-    <section  id="objective-container"className="objective-container">
+    <section id="objective-container" className="objective-container">
       <div className="objective-inner">
         {/* Columna izquierda: imagen */}
         <div className="objective-image-column">
@@ -15,15 +15,12 @@ const Objective: React.FC = () => {
         <div className="objective-text-column">
           <h2>Objetivo</h2>
           <p>
-            El objetivo principal de SkillNet es digitalizar y simplificar los 
-            procesos tradicionales de selección de personal, permitiendo a las 
-            empresas publicar convocatorias, gestionar postulaciones y encontrar 
-            candidatos adecuados en menos tiempo.
-          </p>
-          <p>
-            Al mismo tiempo, brindamos a los profesionales una manera sencilla de 
-            construir su perfil, postular a vacantes y destacar sus habilidades en 
-            un entorno cada vez más competitivo.
+            El objetivo de GlowUp es desarrollar e implementar una plataforma
+            digital que optimice la gestión de citas en barberías y salones de
+            belleza del municipio de La Paz, permitiendo a los usuarios reservar
+            turnos en tiempo real, explorar estilos previamente y reducir los
+            tiempos de espera, mejorando así la experiencia del cliente y la
+            organización de los establecimientos.
           </p>
         </div>
       </div>

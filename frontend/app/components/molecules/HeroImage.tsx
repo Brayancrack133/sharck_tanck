@@ -5,12 +5,12 @@ import './HeroImage.css';
 const HeroImage: React.FC = () => {
   return (
     <div className="hero-container">
-      <img className="hero-image" src="/herov3.png" alt="Banner principal" />
+      <img className="hero-image" src="/logo_1_barber.png" alt="Banner principal" />
       <div className="hero-overlay">
-        <p>Conectamos talento con oportunidades, impulsamos tu futuro.</p>
+        <p>Transformamos tu look, potenciamos tu confianza.</p>
         <button onClick={() => {
   document.getElementsByClassName('about-container')[0]?.scrollIntoView({ behavior: 'smooth' });
-}}>Conoce a Skillnet</button>
+}}>Conoce a GlowUp</button>
       </div>
     </div>
   );

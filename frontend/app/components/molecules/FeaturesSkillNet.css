@@ -18,7 +18,7 @@
   .features-left h2 {
     font-size: 40px;
     text-align: left;
-    color: #063C91; /* Color del título */
+    color: #985610; /* Color del título */
     margin: 0;
   }
   
@@ -44,7 +44,7 @@
   /* Cada tarjeta individual */
   .feature-card {
     margin: 0 10px;
-    background-color: #063C91;
+    background-color: #985610;
     color: #FFFFFF;
     border-radius: 15px;
     padding: 20px;
@@ -103,7 +103,7 @@
   /* src/components/molecules/FeaturesSkillNet.css */
 .feature-icon {
   display: block;
-  margin: 0 auto 16px;
-  width:200px;
-  height: auto;
+  width: 100%;       /* Ocupa todo el ancho de la tarjeta */
+  height: auto;      /* Mantiene proporción */
+  border-radius: 10px; /* Opcional si quieres bordes suaves */
 }

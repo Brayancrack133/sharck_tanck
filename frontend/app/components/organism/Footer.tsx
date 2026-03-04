@@ -8,7 +8,7 @@ import instagram from "@/public/Subtract (1).svg";
 import youtube from "@/public/Subtract (2).svg";
 import telefono from "@/public/call.svg";
 import mail from "@/public/email.svg";
-import logo from "@/public/logo1 1.svg";
+import logo from "@/public/logo_2_barber.jpeg";
 
 import "./Footer.css";
 
@@ -26,7 +26,7 @@ function Footer() {
         <div className="footer-main">
           {/* Columna de navegación */}
           <div className="footer-column">
-            <h3 className="footer-title">Navegar por SkillNet</h3>
+            <h3 className="footer-title">Navegar por GlowUp</h3>
             <div className="footer-links">
               <Link href="/" onClick={handleLinkClick} className="footer-link">
                 Inicio
@@ -68,11 +68,11 @@ function Footer() {
             <div className="footer-contact">
               <div className="contact-item">
                 <Image src={telefono} alt="Teléfono" className="contact-icon" />
-                <span>+591 76599447</span>
+                <span>+591 70638989</span>
               </div>
               <div className="contact-item">
                 <Image src={mail} alt="Correo electrónico" className="contact-icon" />
-                <span>cybertigres@skillnet.org</span>
+                <span>obito@glowup.com</span>
               </div>
               <div className="contact-item location">
                 <span>📍 EMI Irpavi</span>
@@ -103,10 +103,10 @@ function Footer() {
         {/* Pie del footer */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <span>© 2025 SkillNet Project. Todos los derechos reservados.</span>
+            <span>© 2026 GlowUp Project. Todos los derechos reservados.</span>
           </div>
           <div className="footer-logo">
-            <Image src={logo} alt="SkillNet logo" className="logo-img" />
+            <Image src={logo} alt="GlowUp logo" className="logo-img" />
           </div>
         </div>
       </div>
