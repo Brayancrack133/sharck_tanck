@@ -8,7 +8,7 @@ const Objective: React.FC = () => {
       <div className="objective-inner">
         {/* Columna izquierda: imagen */}
         <div className="objective-image-column">
-          <img src="/obj.svg" alt="Ilustración Objetivo SkillNet" />
+          <img src="/objetivos_barber.png" alt="Ilustración Objetivo SkillNet" />
         </div>
 
         {/* Columna derecha: texto centrado */}
