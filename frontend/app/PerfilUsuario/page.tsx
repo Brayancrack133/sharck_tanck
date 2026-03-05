@@ -6,6 +6,7 @@ import Footer from '../components/organism/Footer';
 import Header from '../components/organism/Header';
 import UsuarioMenu from '../components/UsuarioMenu';
 
+export const dynamic = "force-dynamic";
 export default function Page() {
   // useSearchParams puede devolver null, así que hacemos un chequeo seguro
   const searchParams = useSearchParams();
