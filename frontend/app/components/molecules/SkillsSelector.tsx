@@ -1,8 +1,8 @@
 // components/molecules/SkillsSelector.tsx
-'use client';
-import React, { useState } from 'react';
-import Badge from '../atoms/Badge';
-import './SkillsSelector.css';
+"use client";
+import React, { useState } from "react";
+import Badge from "../atoms/Badge";
+import "./SkillsSelector.css";
 
 interface SkillsSelectorProps {
   label: string;
@@ -21,35 +21,36 @@ const SkillsSelector: React.FC<SkillsSelectorProps> = ({
   onChange,
   disabled = false,
   maxSelections,
-  className = ''
+  className = "",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredSkills = availableSkills.filter(skill =>
-    skill.toLowerCase().includes(searchTerm.toLowerCase()) &&
-    !selectedSkills.includes(skill)
+  const filteredSkills = availableSkills.filter(
+    (skill) =>
+      skill.toLowerCase().includes(searchTerm.toLowerCase()) &&
+      !selectedSkills.includes(skill),
   );
 
   const toggleSkill = (skill: string) => {
     if (selectedSkills.includes(skill)) {
-      onChange(selectedSkills.filter(s => s !== skill));
+      onChange(selectedSkills.filter((s) => s !== skill));
     } else if (!maxSelections || selectedSkills.length < maxSelections) {
       onChange([...selectedSkills, skill]);
     }
   };
 
   const removeSkill = (skill: string) => {
-    onChange(selectedSkills.filter(s => s !== skill));
+    onChange(selectedSkills.filter((s) => s !== skill));
   };
 
   return (
     <div className={`skills-selector ${className}`}>
       <label className="skills-label">{label}</label>
-      
+
       {selectedSkills.length > 0 && (
         <div className="selected-skills">
-          {selectedSkills.map(skill => (
+          {selectedSkills.map((skill) => (
             <Badge
               key={skill}
               variant="primary"
@@ -78,21 +79,20 @@ const SkillsSelector: React.FC<SkillsSelectorProps> = ({
           disabled={disabled}
         >
           <span>
-            {selectedSkills.length > 0 
-              ? `${selectedSkills.length} habilidad${selectedSkills.length !== 1 ? 'es' : ''} seleccionada${selectedSkills.length !== 1 ? 's' : ''}`
-              : 'Seleccionar habilidades'
-            }
+            {selectedSkills.length > 0
+              ? `${selectedSkills.length} habilidad${selectedSkills.length !== 1 ? "es" : ""} seleccionada${selectedSkills.length !== 1 ? "s" : ""}`
+              : "Seleccionar habilidades"}
           </span>
-          <svg 
-            className={`dropdown-arrow ${isOpen ? 'open' : ''}`}
-            width="16" 
-            height="16" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className={`dropdown-arrow ${isOpen ? "open" : ""}`}
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
             strokeWidth="2"
           >
-            <polyline points="6,9 12,15 18,9"/>
+            <polyline points="6,9 12,15 18,9" />
           </svg>
         </button>
 
@@ -107,16 +107,20 @@ const SkillsSelector: React.FC<SkillsSelectorProps> = ({
                 className="skills-search"
               />
             </div>
-            
+
             <div className="skills-list">
               {filteredSkills.length > 0 ? (
-                filteredSkills.map(skill => (
+                filteredSkills.map((skill) => (
                   <button
                     key={skill}
                     type="button"
                     className="skill-option"
                     onClick={() => toggleSkill(skill)}
-                    disabled={disabled || (maxSelections && selectedSkills.length >= maxSelections)}
+                    disabled={
+                      disabled ||
+                      (maxSelections !== undefined &&
+                        selectedSkills.length >= maxSelections)
+                    }
                   >
                     {skill}
                   </button>
